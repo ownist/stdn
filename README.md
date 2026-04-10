@@ -1,1 +1,1 @@
-# stdn
+This repository serves as a centralized archive for my self-taught journey in the world of web development. As I explore resources from YouTube, official documentations, and online courses, I use this space to
