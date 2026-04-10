@@ -1,4 +1,4 @@
-## stdn
+# stdn
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/ownist/stdn)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ownist/stdn)
