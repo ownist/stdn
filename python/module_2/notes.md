@@ -6,3 +6,7 @@
 
 - `upper()` function puro string ke uppercase e convert kore
 - `lower()` function puro string ke lowercase e convert kore
+
+#
+
+**what is `f` string:** `f` string python e dynamicaly string lekhte help kore. eita string formating take onek clean kore fele. string er moddhe dynamically variable lekhte/call korte help kore like javascript
