@@ -1,2 +1,3 @@
 - **variable:** variable holo ekta container jeikhane amra kono infromation store korte pari
 - **type convertion:** jokhon amra ekta data type ke arekta data type e convert kori tokhon take type convetion bole
+- **`input()` function:** `input()` hocche python er ekta in-built function jeita user ke kono ekta question ask kore and user seitar answer dite pare / eita user er theke jekono data collect korte help kore. input function er maddhome amra user ke kono question korte pari and user seitar answer amader dite pare.. eitar maddhome amra user er input nite pari
