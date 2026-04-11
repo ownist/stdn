@@ -1,3 +1,3 @@
-| Date | Topic | What I Learned | Source |
-| ---- | ----- | -------------- | ------ |
-| N/A  | N/A   | N/A            | N/A    |
+| Date       | Topic         | What I Learned                                                                                         | Source                                                                                             |
+| ---------- | ------------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| 11-04-2026 | python basics | variable, data type, type convertion, `input()` function for user input, basic input operation methods | [YT: CodeTutorBD - Python Full Course in Bangla](https://youtu.be/_9C_ysAQfN4?si=DpcDFbUd085bKGJ4) |
