@@ -1,0 +1,2 @@
+- **variable:** variable holo ekta container jeikhane amra kono infromation store korte pari
+- **type convertion:** jokhon amra ekta data type ke arekta data type e convert kori tokhon take type convetion bole
