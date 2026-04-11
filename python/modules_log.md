@@ -12,4 +12,4 @@
 - String, Integers, floats, booleans
 - Type convertion
 - `input()` function for user input
-- Basic input operation / methods
+- Basic string operation / methods
