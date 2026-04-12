@@ -13,3 +13,10 @@
 - Type convertion
 - `input()` function for user input
 - Basic string operation / methods
+
+## Module 3: Operators and Expressions
+
+- Arithmetic oerators
+- Comparison operators
+- Logical operators
+- Order of operations (PEMDAS)
