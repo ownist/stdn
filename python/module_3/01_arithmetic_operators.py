@@ -1,3 +1,4 @@
+# arithmetic operators ---------------------
 
 # addition
 print(5 + 3)
