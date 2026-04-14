@@ -20,3 +20,16 @@ if age >= 18 and has_nid:
     print("you can vote")
 else:
     print("you cannot vote")
+
+
+# nested condition
+my_age = 20
+has_ticket = False
+
+if my_age >= 18:
+    if has_ticket:
+        print("u can watch the movie")
+    else:
+        print("u cannot watch the movie")
+else:
+    print("u are too younger")
