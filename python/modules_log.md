@@ -6,6 +6,8 @@
 - Running Python (vscode)
 - First python programm: `print("hello ownist")`
 
+#
+
 ## Module 2: Variable & Data Types
 
 - Variable and assignment
@@ -14,9 +16,24 @@
 - `input()` function for user input
 - Basic string operation / methods
 
+#
+
 ## Module 3: Operators and Expressions
 
 - Arithmetic oerators
 - Comparison operators
 - Logical operators
 - Order of operations (PEMDAS)
+
+#
+
+## Module 4: Conditional Statements
+
+- `if`, `elif` and `else`
+- indentation rules
+- logical conditions
+- nested conditionals
+
+**Mini Project:** _Grading System_: Take user marks and print the grade.
+
+**Activity:** Create a _basic calculator_ with input values
