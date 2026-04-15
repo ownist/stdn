@@ -37,3 +37,13 @@
 **Mini Project:** _Grading System_: Take user marks and print the grade.
 
 **Activity:** Create a _basic calculator_ with input values
+
+#
+
+## Module 5: Loops & Iteration
+
+- `while` loop
+- `for` loop with `range`
+- Loop control: `break`, `continue`, `pass`
+- Nested Loops
+- **Mini Project:** Number guessing game or multiplication table generator
