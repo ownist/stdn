@@ -54,3 +54,12 @@ for n in range(5):
     if n == 2:
         pass
     print(n)
+
+
+print("\n")  # for a new line
+
+
+# nested loop
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, "x", j, "=", i * j)
