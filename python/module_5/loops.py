@@ -45,3 +45,12 @@ for n in range(1, 11):
     if n % 2 == 1:
         continue
     print(n)
+
+
+print("\n")  # for a new line
+
+# pass
+for n in range(5):
+    if n == 2:
+        pass
+    print(n)
