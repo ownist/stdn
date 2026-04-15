@@ -36,3 +36,12 @@ for i in range(1, 11):
     if i == 10:
         break
     print(i)
+
+
+print("\n")  # for a new line
+
+# continue
+for n in range(1, 11):
+    if n % 2 == 1:
+        continue
+    print(n)
