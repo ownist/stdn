@@ -1,6 +1,29 @@
-# while loop
+# ----------------------- while loop -----------------------
 count = 1
 
 while count <= 5:
     print(f"count is {count}")
-    count = count + 1
+    count += 1
+
+
+print("\n")  # fro a new line
+
+
+# ----------------------- for loop -----------------------
+# for loop structure:
+# for loop_variable in range(start_value, end_value, step(optional)):
+#     # do something
+#     print(f"number {i}")
+
+for n in range(1, 6):
+    print(f"number: {n}")
+
+
+print("\n")  # for a new line
+
+
+# list print
+friends = ["siyam", "sabbir", "niloy", "bappy", "sifat(vaista)"]
+
+for f in friends:
+    print(f.capitalize())
