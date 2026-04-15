@@ -3,3 +3,4 @@
 | 11-04-2026 | python basics                  | variable, data type, type convertion, `input()` function for user input, basic input operation methods | [YT: CodeTutorBD - Python Full Course in Bangla](https://youtu.be/_9C_ysAQfN4?t=836)  |
 | 12-04-2026 | python operators & expressions | arithmetic operators, comparison operators, logical operators, order of operations `PEMDAS` method     | [YT: CodeTutorBD - Python Full Course in Bangla](https://youtu.be/_9C_ysAQfN4?t=3134) |
 | 14-04-2026 | python conditional statements  | `if`, `elif` and `else`, indentation rules, logical conditions, nested conditionals                    | [YT: CodeTutorBD - Python Full Course in Bangla](https://youtu.be/_9C_ysAQfN4?t=4685) |
+| 15-04-2026 | python loops & iteration       | `while` loop, `for` loop with `range`, Loop control: `break`, `continue`, `pass`, Nested Loops         | [YT: CodeTutorBD - Python Full Course in Bangla](https://youtu.be/_9C_ysAQfN4?t=6163) |
