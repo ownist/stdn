@@ -27,3 +27,12 @@ friends = ["siyam", "sabbir", "niloy", "bappy", "sifat(vaista)"]
 
 for f in friends:
     print(f.capitalize())
+
+
+print("\n")  # for a new line
+
+# ----------------------- loop control -----------------------
+for i in range(1, 11):
+    if i == 10:
+        break
+    print(i)
