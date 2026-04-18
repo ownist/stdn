@@ -35,7 +35,7 @@ print("\n")
 
 # ---------------------------- loop control ----------------------------
 
-# using while loop
+# break statement using while and for loop
 count = 1
 while count <= 10:
     if count == 5:
@@ -50,4 +50,23 @@ print("\n")
 for i in range(1, 7):
     if i == 4:
         break
+    print(i)
+
+
+print("\n")
+
+
+# continue statement for loop
+for i in range(1, 11):
+    if i % 2 != 0:
+        continue
+    print(i)
+
+
+print("\n")
+
+
+for i in range(6):
+    if i % 2 != 0:
+        continue
     print(i)
