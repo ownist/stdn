@@ -2,7 +2,7 @@
   <img src="https://avatars.githubusercontent.com/u/163788370?v=4" style="width:80px; height:80px; border-radius:50%;">
 </p>
 
-<h3 align="center">My Visual Studio Code Settings & Extensions for Windows</h3>
+<h3 align="center">My Visual Studio Code Settings & Extensions for Linux (Ubuntu)</h3>
 
 ## Instructions
 
