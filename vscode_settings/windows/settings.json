@@ -1,0 +1,119 @@
+{
+  "workbench.startupEditor": "none",
+  "files.autoSave": "afterDelay",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": {
+        "id": "terminal-cmd"
+      }
+    },
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.wordWrap": "on",
+  "css.lint.unknownAtRules": "ignore",
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "terminal.integrated.fontFamily": "'JetBrains Mono'",
+  "terminal.integrated.tabs.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.list.smoothScrolling": true,
+  "editor.renderWhitespace": "none",
+  "editor.stickyScroll.enabled": false,
+  "terminal.integrated.cursorStyleInactive": "none",
+  "editor.cursorBlinking": "expand",
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "workbench.editorAssociations": {
+    "*.ps1": "default",
+    "*.pdf": "pdf.preview"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorCustomizations": {
+    "[Vira*]": {
+      "statusBar.debuggingBackground": "#80CBC433",
+      "statusBar.debuggingForeground": "#80CBC4",
+      "toolbar.activeBackground": "#80CBC426",
+      "button.background": "#80CBC4",
+      "button.hoverBackground": "#80CBC4cc",
+      "extensionButton.separator": "#80CBC433",
+      "extensionButton.background": "#80CBC414",
+      "extensionButton.foreground": "#80CBC4",
+      "extensionButton.hoverBackground": "#80CBC433",
+      "extensionButton.prominentForeground": "#80CBC4",
+      "extensionButton.prominentBackground": "#80CBC414",
+      "extensionButton.prominentHoverBackground": "#80CBC433",
+      "activityBarBadge.background": "#80CBC4",
+      "activityBar.activeBorder": "#80CBC4",
+      "activityBarTop.activeBorder": "#80CBC4",
+      "list.inactiveSelectionIconForeground": "#80CBC4",
+      "list.activeSelectionForeground": "#80CBC4",
+      "list.inactiveSelectionForeground": "#80CBC4",
+      "list.highlightForeground": "#80CBC4",
+      "sash.hoverBorder": "#80CBC480",
+      "list.activeSelectionIconForeground": "#80CBC4",
+      "scrollbarSlider.activeBackground": "#80CBC480",
+      "editorSuggestWidget.highlightForeground": "#80CBC4",
+      "textLink.foreground": "#80CBC4",
+      "progressBar.background": "#80CBC4",
+      "pickerGroup.foreground": "#80CBC4",
+      "tab.activeBorder": "#80CBC4",
+      "tab.activeBorderTop": "#80CBC400",
+      "tab.unfocusedActiveBorder": "#80CBC4",
+      "tab.unfocusedActiveBorderTop": "#80CBC400",
+      "tab.activeModifiedBorder": "#80CBC400",
+      "notificationLink.foreground": "#80CBC4",
+      "editorWidget.resizeBorder": "#80CBC4",
+      "editorWidget.border": "#80CBC4",
+      "settings.modifiedItemIndicator": "#80CBC4",
+      "panelTitle.activeBorder": "#80CBC4",
+      "breadcrumb.activeSelectionForeground": "#80CBC4",
+      "menu.selectionForeground": "#80CBC4",
+      "menubar.selectionForeground": "#80CBC4",
+      "editor.findMatchBorder": "#80CBC4",
+      "selection.background": "#80CBC440",
+      "statusBarItem.remoteBackground": "#80CBC414",
+      "statusBarItem.remoteHoverBackground": "#80CBC4",
+      "statusBarItem.remoteForeground": "#80CBC4",
+      "notebook.inactiveFocusedCellBorder": "#80CBC480",
+      "chat.slashCommandForeground": "#80CBC4",
+      "chat.avatarForeground": "#80CBC4",
+      "activityBarBadge.foreground": "#000000",
+      "button.foreground": "#000000",
+      "statusBarItem.remoteHoverForeground": "#000000"
+    }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.colorTheme": "One Dark Pro Flat",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "license.author": "Shahed Bishwas (@ownist)",
+  "terminal.integrated.initialHint": false,
+  "explorer.compactFolders": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "editor.fontSize": 16,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "explorer.confirmPasteNative": false
+}
