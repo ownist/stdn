@@ -21,12 +21,28 @@
 
 
 # return value
-def add_number(a, b):
-    return a + b
+# def add_number(a, b):
+#     return a + b
 
 
-sum = add_number(5, 2)
-print(sum)
+# sum = add_number(5, 2)
+# print(sum)
 
-sum2 = add_number(4, 2)
-print(sum2)
+# sum2 = add_number(4, 2)
+# print(sum2)
+
+
+# scope (local vs global)
+name = "shahed"  # this is global variable
+
+
+def say_hlw():  # function ekta block scope
+    name = "ownist"  # this is block scope
+    print(
+        f"inside fnc {name}"
+    )  # eita ownist print korbe bcz block scope e priority beshi
+
+
+say_hlw()
+print(name)  # shahed
+print(len("ownist"))  # built in func / method
