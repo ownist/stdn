@@ -47,3 +47,11 @@
 - Loop control: `break`, `continue`, `pass`
 - Nested Loops
 - **Mini Project:** Number guessing game or multiplication table generator
+
+## Module 6: Functions in Python
+
+- Defining functions
+- Parameters and return values
+- Scope (local vs global)
+- Built-in vs User-defined functions
+- **Mini Project:** _Tip Calculator using functions_
