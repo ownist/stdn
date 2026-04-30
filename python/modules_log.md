@@ -55,3 +55,12 @@
 - Scope (local vs global)
 - Built-in vs User-defined functions
 - **Mini Project:** _Tip Calculator using functions_
+
+## Module 7: Lists and Tuples
+
+- Creating lists and tuples
+- List indexing and slicing
+- Common list methods (`append`, `remove`, etc)
+- Iterating over lists
+- Tuple immutability
+- **Mini Project:** _To-Do List Manager_
