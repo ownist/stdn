@@ -29,3 +29,6 @@ fruits.sort()
 print(fruits)  # ['apple', 'grave', 'lichi', 'mango']
 
 print(len(fruits))  # 4
+
+for fruit in fruits:
+    print(fruit.capitalize())
