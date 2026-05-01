@@ -12,3 +12,12 @@ print(student.get("occupation"))
 
 # key na thakle err dibe nh.. none dibe. which mean's program crash korbe nah
 print(student.get("major"))
+
+
+# ---- modify and set -----
+student["age"] = 20
+print(student)
+
+student["goal"] = "millionaire"
+print(student)
+print(student["goal"])
