@@ -64,3 +64,10 @@
 - Iterating over lists
 - Tuple immutability
 - **Mini Project:** _To-Do List Manager_
+
+## Module 8: Dictionaries and Sets
+
+- Dictionaries Basics (key - value pairs)
+- Accessing, adding, modifying data
+- Dictionaries methods (`get`, `pop`, `items` etc)
+- Set operations
