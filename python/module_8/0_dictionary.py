@@ -21,3 +21,17 @@ print(student)
 student["goal"] = "millionaire"
 print(student)
 print(student["goal"])
+print(student.get("goal"))  # using `get` method
+
+
+# ----- methods -----
+student.pop("age")
+print(student)
+
+print(
+    student.keys()
+)  # get dictionaries keys: dict_keys(['name', 'occupation', 'goal'])
+print(student.values())  # get dictionaries values
+
+print(student.items())  # get key - value pairs
+# dict_items([('name', 'Shahed'), ('occupation', 'student'), ('goal', 'millionaire')])
