@@ -35,3 +35,9 @@ print(student.values())  # get dictionaries values
 
 print(student.items())  # get key - value pairs
 # dict_items([('name', 'Shahed'), ('occupation', 'student'), ('goal', 'millionaire')])
+
+print("\n")
+
+# ----- iterate dict -----
+for key, value in student.items():
+    print(f"{key.capitalize()}: {value.capitalize()}")
