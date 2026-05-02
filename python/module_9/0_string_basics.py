@@ -42,3 +42,14 @@ print(word[1:5])
 print(word[:2])
 print(word[:2].lower())
 print(word[2:])
+
+
+print("\n")
+
+
+# ----- substring -----
+email = "abc@example.com"
+print("@" in email)
+print("gmail" in email)
+print("example" in email)
+print(email.endswith(".com"))
