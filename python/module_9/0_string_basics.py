@@ -25,3 +25,20 @@ name = "Shahed"
 age = 17
 
 print(f"My name is {name} and I'm {age} yrs old.")
+
+
+print("\n")
+
+
+# ----- indexing and slicing -----
+word = "Python"
+print(word.index("ython"))
+print(word[2])
+print(word[-1])
+print(word[-3])
+
+# slicing
+print(word[1:5])
+print(word[:2])
+print(word[:2].lower())
+print(word[2:])
