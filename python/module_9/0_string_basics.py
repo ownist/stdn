@@ -1,0 +1,18 @@
+# ----- string methods -----
+message = "hey how is it going?"
+
+print(message.upper())  # upper
+print(message.lower())  # make it lowercase
+print(message.capitalize())  # make it capitalize
+
+print(message.replace("hey", "kire"))  # kire how is it going?
+
+print("\n")
+
+text = "     hello python"
+print(text.strip())
+print(message.startswith("h"))  # True
+print(message.endswith("."))  # False
+
+msg = "Hi Python, I love Python"
+print(msg.count("Python"))
