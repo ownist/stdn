@@ -71,3 +71,11 @@
 - Accessing, adding, modifying data
 - Dictionaries methods (`get`, `pop`, `items` etc)
 - Set operations
+
+## Module 9: Working with String
+
+- String Methods (`upper`, `lower`, `replace` etc)
+- String Formatting (`f - string`)
+- Slicing and Indexing
+- Checking substrings
+- **Mini Project:** _Password Strength Checker_
