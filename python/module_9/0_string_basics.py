@@ -16,3 +16,12 @@ print(message.endswith("."))  # False
 
 msg = "Hi Python, I love Python"
 print(msg.count("Python"))
+
+print("\n")
+
+
+# ----- string formatting -----
+name = "Shahed"
+age = 17
+
+print(f"My name is {name} and I'm {age} yrs old.")
