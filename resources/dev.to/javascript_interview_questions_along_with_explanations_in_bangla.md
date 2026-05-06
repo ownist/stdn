@@ -40,3 +40,24 @@ closure(); // Output: Hello
 console.log(x); // Output: undefined
 var x = 10;
 ```
+
+এখানে, x প্রথমে undefinedহিসেবে hoistকরা হয়েছে।
+
+**5. Callback Function কি?**
+
+- উত্তর: Callback ফাংশন হলো এমন একটি ফাংশন যা অন্য একটি ফাংশনের argument হিসেবে পাস করা হয় এবং সেই ফাংশনের ভিতরে এক সময়ে call করা হয়।
+
+**উদাহরণ:**
+
+```js
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback();
+}
+
+function sayGoodbye() {
+  console.log("Goodbye!");
+}
+
+greet("Alice", sayGoodbye); // Output: Hello Alice, Goodbye!
+```
