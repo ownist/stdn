@@ -29,3 +29,14 @@ function outerFunction() {
 const closure = outerFunction();
 closure(); // Output: Hello
 ```
+
+**4. Hoisting কী?**
+
+- উত্তর: Hoisting হলো একটি মেকানিজম যেখানে JavaScript variable declaration এবং function declaration কে স্বয়ংক্রিয়ভাবে স্কোপের উপরের দিকে নিয়ে যায়। কিন্তু initialization টা পরে হয়।
+
+**উদাহরণ:**
+
+```js
+console.log(x); // Output: undefined
+var x = 10;
+```
