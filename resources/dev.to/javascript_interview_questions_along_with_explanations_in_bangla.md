@@ -61,3 +61,7 @@ function sayGoodbye() {
 
 greet("Alice", sayGoodbye); // Output: Hello Alice, Goodbye!
 ```
+
+**6. Asynchronous JavaScript কী এবং এটি কীভাবে কাজ করে?**
+
+- উত্তর: Asynchronous JavaScript হলো এমন একটি মেকানিজম যেখানে কিছু কাজগুলো non-blocking ভাবে করা যায়। যেমন: setTimeout, fetch, বা AJAX কল। এটি Event Loop এর মাধ্যমে কাজ করে, যা কলব্যাকগুলিকে এক সময়ে execute করে।
