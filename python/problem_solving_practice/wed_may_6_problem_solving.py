@@ -129,3 +129,23 @@ for i in range(len(original_list) - 1, -1, -1):
     rev.append(original_list[i])
 
 print(rev)
+
+
+print("\n")
+
+
+# ==================================
+# একটি ভ্যারিয়েবলে একটি সংখ্যা সেভ করো (ধরো secret_number = 7)। এবার ইউজারকে ইনপুট দিতে বলো। ইউজার সঠিক সংখ্যা না বলা পর্যন্ত while লুপের মাধ্যমে ইনপুট নিতেই থাকো। মিলে গেলে বলো "Congratulations!"।
+# ==================================
+def number_guessing():
+    secret_num = 4
+
+    while True:
+        user_num = int(input("Enter the correct number: "))
+
+        if user_num == secret_num:
+            print(f"Congo! {user_num} is the correct secret number")
+            break
+
+
+number_guessing()
