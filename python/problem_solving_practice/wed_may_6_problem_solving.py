@@ -102,3 +102,21 @@ def multiplicatoin_table():
 
 
 multiplicatoin_table()
+
+
+print("\n")
+
+
+# =========================
+# একটি লিস্ট দেওয়া আছে [10, 20, 30, 40, 50]। কোনো বিল্ট-ইন ফাংশন ছাড়া লুপ ব্যবহার করে এই লিস্টটিকে উল্টো করে আরেকটি নতুন লিস্টে রাখো।
+# =========================
+def reverse_list(list):
+    rev_list = []
+
+    for num in list:
+        rev_list.insert(0, num)
+
+    return rev_list
+
+
+print(reverse_list([10, 20, 30, 40, 50]))
