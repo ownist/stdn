@@ -67,3 +67,22 @@ def chek_vowel(char):
 
 
 print(chek_vowel("o"))
+
+
+print("\n")
+
+
+# ===========================
+# একটি লিস্ট থেকে সবচেয়ে ছোট সংখ্যাটি খুঁজে বের করার ফাংশন লেখো। (যেমন: [5, 2, 9, 1, 6] থেকে 1 বের করবে)।
+# ===========================
+def find_smallest_number(list):
+    smallest_number = list[0]
+
+    for num in list:
+        if num < smallest_number:
+            smallest_number = num
+
+    return smallest_number
+
+
+print(find_smallest_number([5, 2, 9, 1, 6]))
