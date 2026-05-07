@@ -120,3 +120,12 @@ def reverse_list(list):
 
 
 print(reverse_list([10, 20, 30, 40, 50]))
+
+# using append method
+original_list = [1, 2, 3, 4, 5]
+rev = []
+
+for i in range(len(original_list) - 1, -1, -1):
+    rev.append(original_list[i])
+
+print(rev)
