@@ -41,3 +41,27 @@ def checkList(list, user_input):
 
 
 print(checkList([12, 54, 26, 84, 65], 65))
+
+
+print("\n")
+
+
+# ==============================
+# ইউজার থেকে একটি অক্ষর (Character) ইনপুট নাও এবং সেটি ভাওয়েল নাকি কনসোনেন্ট তা if-else দিয়ে চেক করো।
+# ==============================
+def chek_vowel(char):
+    char_lower = char.lower()
+
+    if (
+        char_lower == "a"
+        or char_lower == "e"
+        or char_lower == "i"
+        or char_lower == "o"
+        or char_lower == "u"
+    ):
+        return f"{char} is a vowel"
+
+    return f"{char} is not a vowel, {char} is a conconent"
+
+
+print(chek_vowel("o"))
