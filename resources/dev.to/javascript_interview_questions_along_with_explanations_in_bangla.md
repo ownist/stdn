@@ -88,3 +88,16 @@ const person = {
 
 person.greet(); // Output: Hello, Alice
 ```
+
+**9. == এবং === এর মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - `==` (Loose Equality): এটি ভ্যালুগুলির মধ্যে type coercion করে এবং তারপর তাদের তুলনা করে।
+  - `===` (Strict Equality): এটি ভ্যালুগুলির type এবং value উভয়ই চেক করে। যদি তারা একই না হয়, তবে এটি false রিটার্ন করে।
+
+**উদাহরণ:**
+
+```js
+console.log(1 == "1"); // true (type coercion হয়)
+console.log(1 === "1"); // false (different types)
+```
