@@ -86,3 +86,19 @@ def find_smallest_number(list):
 
 
 print(find_smallest_number([5, 2, 9, 1, 6]))
+
+
+print("\n")
+
+
+# ======================
+# ইউজার একটি সংখ্যা ইনপুট দিবে (যেমন: ৫), আর তোমার প্রোগ্রাম ওই সংখ্যার নামতা (Multiplication Table) ১০ পর্যন্ত প্রিন্ট করবে।
+# ======================
+def multiplicatoin_table():
+    number = int(input("Enter the number: "))
+
+    for i in range(1, 11):
+        print(f"{number} x {i} = {number * i}")
+
+
+multiplicatoin_table()
