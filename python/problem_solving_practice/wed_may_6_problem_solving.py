@@ -24,3 +24,20 @@ def string_char_count(str):
 
 
 print(string_char_count("ownist"))
+
+
+print("\n")
+
+
+# ===========================
+# একটি লিস্টে কিছু নাম আছে। ইউজার একটি নাম ইনপুট দিলে লুপ চালিয়ে চেক করো ওই নামটি লিস্টে আছে কি না। থাকলে বলো "Found", না থাকলে "Not Found"।
+# ===========================
+def checkList(list, user_input):
+    for item in list:
+        if item == user_input:
+            return f"{user_input} is found in {list}"
+
+    return f"{user_input} is not found in {list}"
+
+
+print(checkList([12, 54, 26, 84, 65], 65))
