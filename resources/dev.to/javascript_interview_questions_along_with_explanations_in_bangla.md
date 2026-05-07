@@ -71,3 +71,20 @@ greet("Alice", sayGoodbye); // Output: Hello Alice, Goodbye!
 - উত্তর:
   - Event Bubbling: যখন একটি ইভেন্ট ঘটে, তখন এটি প্রথমে target element এ ঘটে এবং তারপর উপরের parent elements এর দিকে চলে যায়।
   - Event Capturing: এর উল্টো, ইভেন্টটি প্রথমে root element এ ঘটে এবং নিচের target element এ পৌঁছায়।
+
+**8. `this` কী?**
+
+- উত্তর: `this` হলো একটি কিওয়ার্ড যা বর্তমান execution context কে নির্দেশ করে। অর্থাৎ এটি সেই অবজেক্টকে নির্দেশ করে যা বর্তমান ফাংশনকে কল করেছে।
+
+**উদাহরণ:**
+
+```js
+const person = {
+  name: "Alice",
+  greet: function () {
+    console.log("Hello, " + this.name);
+  },
+};
+
+person.greet(); // Output: Hello, Alice
+```
