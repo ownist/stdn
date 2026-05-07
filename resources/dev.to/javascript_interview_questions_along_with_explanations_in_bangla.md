@@ -65,3 +65,9 @@ greet("Alice", sayGoodbye); // Output: Hello Alice, Goodbye!
 **6. Asynchronous JavaScript কী এবং এটি কীভাবে কাজ করে?**
 
 - উত্তর: Asynchronous JavaScript হলো এমন একটি মেকানিজম যেখানে কিছু কাজগুলো non-blocking ভাবে করা যায়। যেমন: setTimeout, fetch, বা AJAX কল। এটি Event Loop এর মাধ্যমে কাজ করে, যা কলব্যাকগুলিকে এক সময়ে execute করে।
+
+**7. Event Bubbling এবং Event Capturing এর মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - Event Bubbling: যখন একটি ইভেন্ট ঘটে, তখন এটি প্রথমে target element এ ঘটে এবং তারপর উপরের parent elements এর দিকে চলে যায়।
+  - Event Capturing: এর উল্টো, ইভেন্টটি প্রথমে root element এ ঘটে এবং নিচের target element এ পৌঁছায়।
