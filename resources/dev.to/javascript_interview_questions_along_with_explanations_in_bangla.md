@@ -148,3 +148,28 @@ alice.greet(); // Output: Hello, Alice
 
 console.log(alice.__proto__ === Person.prototype); // true
 ```
+
+**১২. `map`, `filter`, এবং `reduce` ফাংশনের মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - `map:` এটি একটি নতুন অ্যারে তৈরি করে যেখানে প্রতিটি উপাদান একটি নির্দিষ্ট ফাংশনের মাধ্যমে পরিবর্তিত হয়।
+  - `filter:` এটি একটি নতুন অ্যারে তৈরি করে যা শুধুমাত্র সেই উপাদানগুলো ধারণ করে যা নির্দিষ্ট শর্ত পূরণ করে।
+  - `reduce:` এটি একটি একক মানে অ্যারের সমস্ত উপাদানকে রিডিউস করে, সাধারণত সমষ্টি বা গুণফল হিসাব করার জন্য ব্যবহৃত হয়।
+
+**উদাহরণ:**
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+
+// map
+const doubled = numbers.map((num) => num * 2);
+console.log(doubled); // [2, 4, 6, 8, 10]
+
+// filter
+const even = numbers.filter((num) => num % 2 === 0);
+console.log(even); // [2, 4]
+
+// reduce
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+console.log(sum); // 15
+```
