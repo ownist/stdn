@@ -89,7 +89,7 @@ const person = {
 person.greet(); // Output: Hello, Alice
 ```
 
-**9. == এবং === এর মধ্যে পার্থক্য কি?**
+**9. `==` এবং `===` এর মধ্যে পার্থক্য কি?**
 
 - উত্তর:
   - `==` (Loose Equality): এটি ভ্যালুগুলির মধ্যে type coercion করে এবং তারপর তাদের তুলনা করে।
@@ -100,4 +100,28 @@ person.greet(); // Output: Hello, Alice
 ```js
 console.log(1 == "1"); // true (type coercion হয়)
 console.log(1 === "1"); // false (different types)
+```
+
+**10. Promises কী এবং এটি কীভাবে কাজ করে?**
+
+- উত্তর: Promise হলো একটি অবজেক্ট যা ভবিষ্যতে কোন একটি asynchronous operation এর সফলতা বা ব্যর্থতার প্রতিনিধিত্ব করে। Promises এর তিনটি স্টেট থাকে:
+  - Pending: অপারেশনটি চলছে।
+  - Fulfilled: অপারেশনটি সফল হয়েছে।
+  - Rejected: অপারেশনটি ব্যর্থ হয়েছে।
+
+**উদাহরণ:**
+
+```js
+const promise = new Promise((resolve, reject) => {
+  let success = true;
+  if (success) {
+    resolve("Operation Successful");
+  } else {
+    reject("Operation Failed");
+  }
+});
+
+promise
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```

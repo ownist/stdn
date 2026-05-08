@@ -7,7 +7,6 @@ for n in range(1, 51):
     if n % 2 == 0:
         sum += n
 
-
 print(sum)
 
 print("\n")
