@@ -125,3 +125,26 @@ promise
   .then((result) => console.log(result))
   .catch((error) => console.log(error));
 ```
+
+**১১. `prototype` এবং `__proto__` এর মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - `prototype:` এটি একটি অবজেক্ট যা কনস্ট্রাক্টর ফাংশনের সাথে যুক্ত থাকে। এটি নতুন অবজেক্ট তৈরির সময় প্রোটোটাইপ চেইনে যুক্ত হয়।
+  - `__proto__:` এটি প্রতিটি অবজেক্টের অভ্যন্তরীণ প্রোপার্টি যা অবজেক্টের প্রোটোটাইপকে নির্দেশ করে।
+
+**উদাহরণ:**
+
+```js
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.greet = function () {
+  console.log("Hello, " + this.name);
+};
+
+const alice = new Person("Alice");
+alice.greet(); // Output: Hello, Alice
+
+console.log(alice.__proto__ === Person.prototype); // true
+```
