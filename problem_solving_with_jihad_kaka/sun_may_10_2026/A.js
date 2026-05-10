@@ -127,3 +127,24 @@ function uniqueArray(arr) {
 }
 
 console.log(uniqueArray([1, 2, 2, 3, 3, 4]));
+
+console.log("\n");
+
+/**
+ * ===========================
+ * Count how many even numbers in array.
+ * ===========================
+ */
+function countEvenNumbers(arr) {
+  let count = 0;
+
+  for (const n of arr) {
+    if (n % 2 === 0) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countEvenNumbers([1, 2, 3, 4, 54, 65]));
