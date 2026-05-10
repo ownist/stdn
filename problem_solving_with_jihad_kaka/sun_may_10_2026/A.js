@@ -31,3 +31,24 @@ function totalSum(arr) {
 }
 
 console.log(totalSum([1, 2, 3, 4]));
+
+console.log("\n");
+
+/**
+ * ===============================
+ * Find the biggest number in an array.
+ * ==============================
+ */
+function largestNumber(arr) {
+  let largestNum = arr[0];
+
+  for (const n of arr) {
+    if (n > largestNum) {
+      largestNum = n;
+    }
+  }
+
+  return `${largestNum} is the largest numebr in the ${arr}`;
+}
+
+console.log(largestNumber([4, 7, 2, 9, 1]));
