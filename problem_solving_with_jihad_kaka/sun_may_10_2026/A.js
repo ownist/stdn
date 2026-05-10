@@ -93,3 +93,16 @@ function countVowels(str) {
 }
 
 console.log(countVowels("shahed and ownist"));
+
+console.log("\n");
+
+/**
+ * ========================
+ * Check if a word reads same backward.
+ * ========================
+ */
+function palindromeCheck(str) {
+  return str.toLowerCase().split("").reverse().join("") === str.toLowerCase();
+}
+
+console.log(palindromeCheck("madam"));
