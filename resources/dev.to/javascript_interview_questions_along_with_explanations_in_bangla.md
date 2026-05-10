@@ -173,3 +173,31 @@ console.log(even); // [2, 4]
 const sum = numbers.reduce((acc, num) => acc + num, 0);
 console.log(sum); // 15
 ```
+
+**১৩. `async` এবং `await` কীভাবে কাজ করে?**
+
+- উত্তর: `async` এবং await হল `asynchronous` কোড লেখার একটি সহজ উপায়। `async` ফাংশনকে প্রতিশ্রুতি (Promise) রিটার্ন করে এবং await ব্যবহার করে সেই প্রতিশ্রুতির ফলাফল পাওয়া যায়।
+
+**উদাহরণ:**
+
+```js
+function fetchData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Data received");
+    }, 2000);
+  });
+}
+
+async function getData() {
+  console.log("Fetching data...");
+  const data = await fetchData();
+  console.log(data);
+}
+
+getData();
+// Output:
+// Fetching data...
+// (২ সেকেন্ড পরে)
+// Data received
+```
