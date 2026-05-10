@@ -201,3 +201,33 @@ getData();
 // (২ সেকেন্ড পরে)
 // Data received
 ```
+
+**১৪. `spread` এবং `rest` অপারেটরের মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - `spread` অপারেটর (`...`): এটি একটি অ্যারের উপাদানগুলোকে পৃথক পৃথক করে, যেমন ফাংশনে আর্গুমেন্ট পাস করতে।
+  - `rest` অপারেটর (`...`): এটি একটি ফাংশনের আর্গুমেন্টগুলোকে একটি অ্যারে হিসেবে গ্রহণ করে।
+
+**উদাহরণ:**
+
+```js
+function fetchData() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Data received");
+    }, 2000);
+  });
+}
+
+async function getData() {
+  console.log("Fetching data...");
+  const data = await fetchData();
+  console.log(data);
+}
+
+getData();
+// Output:
+// Fetching data...
+// (২ সেকেন্ড পরে)
+// Data received
+```
