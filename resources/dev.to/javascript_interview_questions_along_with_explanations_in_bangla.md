@@ -231,3 +231,48 @@ getData();
 // (২ সেকেন্ড পরে)
 // Data received
 ```
+
+**১৫. `debounce` এবং `throttle` এর মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - Debounce: এটি একটি ফাংশনকে একটি নির্দিষ্ট সময়ের মধ্যে একবার কল হতে বাধা দেয়, যতক্ষণ না নির্দিষ্ট সময় পেরোয়া হয়।
+  - Throttle: এটি একটি ফাংশনকে একটি নির্দিষ্ট সময়ের জন্য সীমিত করে, যাতে নির্দিষ্ট সময়ের মধ্যে একাধিক কল করা না যায়।
+
+**উদাহরণ:**
+
+```js
+// Debounce
+function debounce(func, delay) {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
+window.addEventListener(
+  "resize",
+  debounce(() => {
+    console.log("Window resized");
+  }, 500),
+);
+
+// Throttle
+function throttle(func, limit) {
+  let inThrottle;
+  return function (...args) {
+    if (!inThrottle) {
+      func.apply(this, args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+
+window.addEventListener(
+  "scroll",
+  throttle(() => {
+    console.log("Scrolled");
+  }, 1000),
+);
+```
