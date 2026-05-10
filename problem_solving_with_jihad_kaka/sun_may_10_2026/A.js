@@ -13,7 +13,7 @@ const checkisEvenOrOdd = (num) => {
 
 console.log(checkisEvenOrOdd(56));
 
-console.log("\n");
+console.log("\n"); // ============== create a new empty line ==============
 
 /**
  * ==============================
@@ -32,7 +32,7 @@ function totalSum(arr) {
 
 console.log(totalSum([1, 2, 3, 4]));
 
-console.log("\n");
+console.log("\n"); // ============== create a new empty line ==============
 
 /**
  * ===============================
@@ -53,7 +53,7 @@ function largestNumber(arr) {
 
 console.log(largestNumber([4, 7, 2, 9, 1]));
 
-console.log("\n");
+console.log("\n"); // ============== create a new empty line ==============
 
 /**
  * ====================================
@@ -66,7 +66,7 @@ function reverseStr(str) {
 
 console.log(reverseStr("ownist"));
 
-console.log("\n");
+console.log("\n"); // ============== create a new empty line ==============
 
 /**
  * =========================
@@ -94,7 +94,7 @@ function countVowels(str) {
 
 console.log(countVowels("shahed and ownist"));
 
-console.log("\n");
+console.log("\n"); // ============== create a new empty line ==============
 
 /**
  * ========================
@@ -106,3 +106,24 @@ function palindromeCheck(str) {
 }
 
 console.log(palindromeCheck("madam"));
+
+console.log("\n"); // ============== create a new empty line ==============
+
+/**
+ * ========================
+ * Remove duplicate numbers from array.
+ * ========================
+ */
+function uniqueArray(arr) {
+  const unique = [];
+
+  for (const n of arr) {
+    if (!unique.includes(n)) {
+      unique.push(n);
+    }
+  }
+
+  return unique;
+}
+
+console.log(uniqueArray([1, 2, 2, 3, 3, 4]));
