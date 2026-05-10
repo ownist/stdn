@@ -65,3 +65,31 @@ function reverseStr(str) {
 }
 
 console.log(reverseStr("ownist"));
+
+console.log("\n");
+
+/**
+ * =========================
+ * Count vowels in a string.
+ * =========================
+ */
+function countVowels(str) {
+  let count = 0;
+
+  for (const char of str) {
+    const charLower = char.toLowerCase();
+    if (
+      charLower === "a" ||
+      charLower === "e" ||
+      charLower === "i" ||
+      charLower === "o" ||
+      charLower === "u"
+    ) {
+      count++;
+    }
+  }
+
+  return `"${str}" er moddhe ${count} ta vowels ache`;
+}
+
+console.log(countVowels("shahed and ownist"));
