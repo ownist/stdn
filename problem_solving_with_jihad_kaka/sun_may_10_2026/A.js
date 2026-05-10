@@ -128,7 +128,7 @@ function uniqueArray(arr) {
 
 console.log(uniqueArray([1, 2, 2, 3, 3, 4]));
 
-console.log("\n");
+console.log("\n"); // ============== create a new empty line ==============
 
 /**
  * ===========================
@@ -148,3 +148,22 @@ function countEvenNumbers(arr) {
 }
 
 console.log(countEvenNumbers([1, 2, 3, 4, 54, 65]));
+
+console.log("\n"); // ============== create a new empty line ==============
+
+/**
+ * ==========================
+ * Count each character.
+ * ==========================
+ */
+function countEachChar(str) {
+  const charCount = {};
+
+  for (const char of str) {
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+
+  return charCount;
+}
+
+console.log(countEachChar("hello"));
