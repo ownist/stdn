@@ -52,3 +52,16 @@ function largestNumber(arr) {
 }
 
 console.log(largestNumber([4, 7, 2, 9, 1]));
+
+console.log("\n");
+
+/**
+ * ====================================
+ * Reverse a string.
+ * ====================================
+ */
+function reverseStr(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseStr("ownist"));
