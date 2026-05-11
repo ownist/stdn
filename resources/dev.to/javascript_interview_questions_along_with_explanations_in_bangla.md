@@ -276,3 +276,32 @@ window.addEventListener(
   }, 1000),
 );
 ```
+
+**১৬. `bind`, `call`, এবং `apply` এর মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - `call:` এটি একটি ফাংশনকে নির্দিষ্ট this কনটেক্সট সহ কল করে এবং আর্গুমেন্টগুলো আলাদা আলাদা পাস করে।
+  - `apply:` এটি call এর মতই কাজ করে কিন্তু আর্গুমেন্টগুলো একটি অ্যারে হিসেবে পাস করে।
+  - `bind:` এটি একটি নতুন ফাংশন তৈরি করে যা নির্দিষ্ট this কনটেক্সট সহ কল করা যাবে।
+
+**উদাহরণ:**
+
+```js
+const person = {
+  name: "Alice",
+};
+
+function greet(greeting, punctuation) {
+  console.log(greeting + ", " + this.name + punctuation);
+}
+
+// call
+greet.call(person, "Hello", "!"); // Hello, Alice!
+
+// apply
+greet.apply(person, ["Hi", "!!"]); // Hi, Alice!!
+
+// bind
+const greetAlice = greet.bind(person);
+greetAlice("Hey", "!!!"); // Hey, Alice!!!
+```
