@@ -321,3 +321,21 @@ console.log(a); // undefined
 let b = null;
 console.log(b); // null
 ```
+
+**১৮. `localStorage` এবং `sessionStorage` এর মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - `localStorage:` এটি ডেটা ব্রাউজারে স্থায়ীভাবে সংরক্ষণ করে, ব্রাউজার বন্ধ হলেও ডেটা থাকবে।
+  - `sessionStorage:` এটি ডেটা শুধুমাত্র ব্রাউজার সেশনের জন্য সংরক্ষণ করে, ব্রাউজার বন্ধ করলে ডেটা মুছে যাবে।
+
+**উদাহরণ:**
+
+```js
+// localStorage
+localStorage.setItem("username", "Alice");
+console.log(localStorage.getItem("username")); // Alice
+
+// sessionStorage
+sessionStorage.setItem("token", "12345");
+console.log(sessionStorage.getItem("token")); // 12345
+```
