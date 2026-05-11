@@ -305,3 +305,19 @@ greet.apply(person, ["Hi", "!!"]); // Hi, Alice!!
 const greetAlice = greet.bind(person);
 greetAlice("Hey", "!!!"); // Hey, Alice!!!
 ```
+
+**১৭. `undefined` এবং `null` এর মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - `undefined:` এটি একটি ভ্যালু যা ইঙ্গিত করে যে কোনো ভেরিয়েবল ডিফাইন করা হয়েছে কিন্তু সেটি কোনো মান ধারণ করছে না।
+  - `null:` এটি একটি ভ্যালু যা ইঙ্গিত করে যে কোনো ভেরিয়েবল সচেতনভাবে কোনো মান নেই বলে সেট করা হয়েছে।
+
+**উদাহরণ:**
+
+```js
+let a;
+console.log(a); // undefined
+
+let b = null;
+console.log(b); // null
+```
