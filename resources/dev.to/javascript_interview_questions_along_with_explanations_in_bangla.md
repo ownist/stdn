@@ -339,3 +339,23 @@ console.log(localStorage.getItem("username")); // Alice
 sessionStorage.setItem("token", "12345");
 console.log(sessionStorage.getItem("token")); // 12345
 ```
+
+**১৯. `JSON.stringify` এবং `JSON.parse` কী?**
+
+- উত্তর:
+  - `JSON.stringify`: এটি একটি জাভাস্ক্রিপ্ট অবজেক্টকে JSON স্ট্রিং এ রূপান্তর করে।
+  - `JSON.parse`: এটি একটি JSON স্ট্রিংকে জাভাস্ক্রিপ্ট অবজেক্টে রূপান্তর করে।
+
+**উদাহরণ:**
+
+```js
+const obj = { name: "Alice", age: 25 };
+
+// stringify
+const jsonString = JSON.stringify(obj);
+console.log(jsonString); // '{"name":"Alice","age":25}'
+
+// parse
+const parsedObj = JSON.parse(jsonString);
+console.log(parsedObj); // { name: 'Alice', age: 25 }
+```
