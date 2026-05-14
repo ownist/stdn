@@ -416,3 +416,21 @@ function Person(name) {
 const alice = new Person("Alice");
 console.log(alice.name); // Alice
 ```
+
+**২৩. `bind` মেথড কেন এবং কখন ব্যবহার করবেন?**
+
+- উত্তর: `bind` মেথড একটি ফাংশনের this কনটেক্সট নির্দিষ্ট করে এবং একটি নতুন ফাংশন রিটার্ন করে। এটি তখন ব্যবহার করা হয় যখন ফাংশনের this কনটেক্সট নির্দিষ্টভাবে সেট করতে হয়, যেমন ইভেন্ট হ্যান্ডলারে।
+
+**উদাহরণ:**
+
+```js
+const person = {
+  name: "Alice",
+  greet: function () {
+    console.log("Hello, " + this.name);
+  },
+};
+
+const greet = person.greet.bind(person);
+greet(); // Hello, Alice
+```
