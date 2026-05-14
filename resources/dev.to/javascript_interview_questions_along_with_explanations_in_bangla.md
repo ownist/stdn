@@ -434,3 +434,21 @@ const person = {
 const greet = person.greet.bind(person);
 greet(); // Hello, Alice
 ```
+
+**২৪. `Symbol` কী এবং কেন এটি ব্যবহার করা হয়?**
+
+- উত্তর: `Symbol` হল একটি প্রিমিটিভ ডেটা টাইপ যা ইউনিক এবং ইমিউটেবল। এটি অবজেক্টের প্রোপার্টি কী হিসেবে ব্যবহৃত হয় যাতে প্রোপার্টি গুলি কনফ্লিক্ট না করে।
+
+**উদাহরণ:**
+
+```js
+const sym1 = Symbol("description");
+const sym2 = Symbol("description");
+
+console.log(sym1 === sym2); // false
+
+const obj = {};
+
+console.log(obj[sym1]); // value1
+console.log(obj[sym2]); // value2
+```
