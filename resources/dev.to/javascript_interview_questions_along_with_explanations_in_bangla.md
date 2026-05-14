@@ -401,3 +401,18 @@ const intervalId = setInterval(() => {
 // বাতিল করতে
 // clearInterval(intervalId);
 ```
+
+**২২. `new` অপারেটর কী করে?**
+
+- উত্তর: `new` অপারেটর একটি ফাংশনকে কনস্ট্রাক্টর হিসেবে ব্যবহার করে একটি নতুন অবজেক্ট তৈরি করে। এটি প্রোটোটাইপ সেট করে, অবজেক্ট ইন্সট্যান্স তৈরি করে এবং কনস্ট্রাক্টর ফাংশনে this নির্দেশ করে।
+
+**উদাহরণ:**
+
+```js
+function Person(name) {
+  this.name = name;
+}
+
+const alice = new Person("Alice");
+console.log(alice.name); // Alice
+```
