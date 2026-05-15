@@ -452,3 +452,24 @@ const obj = {};
 console.log(obj[sym1]); // value1
 console.log(obj[sym2]); // value2
 ```
+
+**২৫. `Generator` ফাংশন কী এবং কিভাবে কাজ করে?**
+
+- উত্তর: `Generator` ফাংশন একটি বিশেষ ধরনের ফাংশন যা ইটারেটর অবজেক্ট রিটার্ন করে। এটি `function` সিনট্যাক্স দিয়ে ঘোষণা করা হয় এবং `yield` কিওয়ার্ড ব্যবহার করে মান রিটার্ন করে।
+
+**উদাহরণ:**
+
+```js
+function* myGenerator() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+const gen = myGenerator();
+
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+console.log(gen.next().value); // 3
+console.log(gen.next().done); // true
+```
