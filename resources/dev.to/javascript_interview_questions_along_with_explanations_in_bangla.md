@@ -512,3 +512,26 @@ class Person {
 const alice = new Person("Alice");
 alice.greet(); // Hello, Alice
 ```
+
+**২৭. `Memory Leak` কী এবং জাভাস্ক্রিপ্টে কিভাবে এড়ানো যায়?**
+
+- উত্তর: `Memory Leak` হল এমন একটি অবস্থা যেখানে প্রোগ্রামটি অতিরিক্ত মেমরি ব্যবহার করে এবং সেই মেমরি মুক্ত হয় না। জাভাস্ক্রিপ্টে মেমোরি লিক এড়াতে:
+  - অনুপযুক্ত গ্লোবাল ভেরিয়েবল এড়িয়ে চলা।
+  - ইভেন্ট লিসেনারগুলো রিমুভ করা যখন আর প্রয়োজন না।
+  - অবজেক্ট রেফারেন্সগুলো মুক্ত করা যখন আর প্রয়োজন না।
+
+**উদাহরণ:**
+
+```js
+// মেমোরি লিক উদাহরণ
+function createLeak() {
+  const element = document.getElementById("myElement");
+  window.myLeak = element; // গ্লোবাল ভেরিয়েবলে রেফারেন্স রাখা
+}
+
+// এড়ানোর উপায়
+function preventLeak() {
+  const element = document.getElementById("myElement");
+  // প্রয়োজন না হলে রেফারেন্স মুক্ত করা
+}
+```
