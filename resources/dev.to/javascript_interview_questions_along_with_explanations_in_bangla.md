@@ -473,3 +473,42 @@ console.log(gen.next().value); // 2
 console.log(gen.next().value); // 3
 console.log(gen.next().done); // true
 ```
+
+**২৬. `ES6` এর কিছু গুরুত্বপূর্ণ ফিচার কী কী?**
+
+- উত্তর: `ES6` বা `ECMAScript` 2015 হল জাভাস্ক্রিপ্টের একটি বড় আপডেট যা অনেক নতুন ফিচার নিয়ে আসে। এর মধ্যে কিছু গুরুত্বপূর্ণ ফিচার হলো:
+  - `let` এবং `const`: ব্লক-স্কোপড ভেরিয়েবল ডিক্লেয়ারেশন।
+  - Arrow Functions: সংক্ষিপ্ত ফাংশন সিনট্যাক্স এবং `this` বাইন্ডিং।
+  - Template Literals: স্ট্রিং ইন্টারপোলেশন।
+  - Destructuring: অবজেক্ট এবং অ্যারের মান সরাসরি ভেরিয়েবলে ডিক্লেয়ার করা।
+  - Classes: ক্লাস-বেসড অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং সাপোর্ট।
+  - Promises: অ্যাসিঙ্ক্রোনাস অপারেশন হ্যান্ডলিং।
+  - Modules: কোড মডুলারাইজেশন এবং রিইউজিবিলিটি।
+
+**উদাহরণ:**
+
+```js
+// Arrow Function
+const add = (a, b) => a + b;
+
+// Template Literal
+const name = "Alice";
+console.log(`Hello, ${name}!`);
+
+// Destructuring
+const person = { name: "Alice", age: 25 };
+const { name, age } = person;
+
+// Classes
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  greet() {
+    console.log("Hello, " + this.name);
+  }
+}
+
+const alice = new Person("Alice");
+alice.greet(); // Hello, Alice
+```
