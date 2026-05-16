@@ -553,3 +553,29 @@ title.textContent = "New Title";
 console.log(window.innerWidth);
 window.alert("Hello!");
 ```
+
+**২৯. `Event Delegation` কী এবং কেন এটি ব্যবহার করা হয়?**
+
+- উত্তর: `Event Delegation` হল এমন একটি টেকনিক যেখানে একটি প্যারেন্ট এলিমেন্টে ইভেন্ট লিসেনার বসানো হয় এবং চাইল্ড এলিমেন্টের ইভেন্টগুলোকে হ্যান্ডেল করা হয়। এটি পারফরম্যান্স উন্নত করে এবং ডাইনামিক এলিমেন্টের ইভেন্ট হ্যান্ডলিং সহজ করে।
+
+**উদাহরণ:**
+
+```js
+// HTML
+/*
+<ul id="parentList">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+*/
+
+// JavaScript
+const parentList = document.getElementById("parentList");
+
+parentList.addEventListener("click", function (event) {
+  if (event.target && event.target.nodeName === "LI") {
+    console.log("List item clicked:", event.target.textContent);
+  }
+});
+```
