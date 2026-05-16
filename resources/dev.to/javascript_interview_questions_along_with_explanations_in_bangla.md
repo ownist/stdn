@@ -535,3 +535,21 @@ function preventLeak() {
   // প্রয়োজন না হলে রেফারেন্স মুক্ত করা
 }
 ```
+
+**২৮. `DOM` এবং `BOM` এর মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - `DOM` (Document Object Model): এটি একটি API যা ওয়েব পেজের HTML বা XML ডকুমেন্টকে অবজেক্ট হিসেবে মডেল করে, যা জাভাস্ক্রিপ্ট দিয়ে ম্যানিপুলেট করা যায়।
+  - `BOM` (Browser Object Model): এটি ব্রাউজারের নিজস্ব অবজেক্ট এবং মেথডের সংগ্রহ যা ব্রাউজার উইন্ডো এবং এর প্রোপার্টি নিয়ন্ত্রণ করে, যেমন window, navigator, location ইত্যাদি।
+
+**উদাহরণ:**
+
+```js
+// DOM - একটি এলিমেন্ট নির্বাচন এবং ম্যানিপুলেট করা
+const title = document.getElementById("title");
+title.textContent = "New Title";
+
+// BOM - ব্রাউজার উইন্ডো নিয়ন্ত্রণ করা
+console.log(window.innerWidth);
+window.alert("Hello!");
+```
