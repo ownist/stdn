@@ -579,3 +579,21 @@ parentList.addEventListener("click", function (event) {
   }
 });
 ```
+
+**৩০. `Shadow DOM` কী এবং কেন এটি গুরুত্বপূর্ণ?**
+
+- উত্তর: `Shadow DOM` হল ওয়েব কম্পোনেন্টের একটি অংশ যা একটি পৃথক, ইনক্যাপসুলেটেড DOM রুট তৈরি করে। এটি স্টাইল এবং স্ক্রিপ্টের আইসোলেশন নিশ্চিত করে, যাতে বাইরের কোডের সাথে কনফ্লিক্ট না হয়।
+
+**উদাহরণ:**
+
+```js
+const host = document.getElementById("shadowHost");
+const shadowRoot = host.attachShadow({ mode: "open" });
+
+shadowRoot.innerHTML = `
+  <style>
+    p { color: blue; }
+  </style>
+  <p>This is inside Shadow DOM</p>
+`;
+```
