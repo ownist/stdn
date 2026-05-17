@@ -616,3 +616,21 @@ const immutableObj = Object.freeze({ name: "Alice" });
 immutableObj.name = "Bob"; // পরিবর্তন হবে না
 console.log(immutableObj.name); // Alice
 ```
+
+**৩২. `Destructuring` কি এবং কিভাবে এটি কাজ করে?**
+
+- উত্তর: `Destructuring` হল জাভাস্ক্রিপ্টের একটি সিনট্যাক্স যা অবজেক্ট বা অ্যারের মানগুলোকে সরাসরি ভেরিয়েবলে আলাদা করে নিয়ে আসে।
+
+**উদাহরণ:**
+
+```js
+// Array Destructuring
+const numbers = [1, 2, 3];
+const [a, b, c] = numbers;
+console.log(a, b, c); // 1 2 3
+
+// Object Destructuring
+const person = { name: "Alice", age: 25 };
+const { name, age } = person;
+console.log(name, age); // Alice 25
+```
