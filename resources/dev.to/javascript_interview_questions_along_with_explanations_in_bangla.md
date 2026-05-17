@@ -597,3 +597,22 @@ shadowRoot.innerHTML = `
   <p>This is inside Shadow DOM</p>
 `;
 ```
+
+**৩১. `Immutable` এবং `Mutable` অবজেক্টের মধ্যে পার্থক্য কি?**
+
+- উত্তর:
+  - `Immutable`: এগুলো এমন অবজেক্ট যা একবার তৈরি হলে পরিবর্তন করা যায় না। পরিবর্তন করলে নতুন অবজেক্ট তৈরি হয়।
+  - `Mutable`: এগুলো এমন অবজেক্ট যা তাদের প্রোপার্টি পরিবর্তন করা যায়।
+
+**উদাহরণ:**
+
+```js
+// Mutable
+const obj = { name: "Alice" };
+obj.name = "Bob"; // পরিবর্তন করা যায়
+
+// Immutable (using Object.freeze)
+const immutableObj = Object.freeze({ name: "Alice" });
+immutableObj.name = "Bob"; // পরিবর্তন হবে না
+console.log(immutableObj.name); // Alice
+```
