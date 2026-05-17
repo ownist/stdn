@@ -634,3 +634,18 @@ const person = { name: "Alice", age: 25 };
 const { name, age } = person;
 console.log(name, age); // Alice 25
 ```
+
+**৩৩. `Immutable Data Structures` কী এবং কেন এটি গুরুত্বপূর্ণ?**
+
+- উত্তর: `Immutable Data Structures` হল এমন ডেটা স্ট্রাকচার যা একবার তৈরি হলে পরিবর্তন করা যায় না। এটি ডেটা ফ্লোকে সহজ করে এবং বাগ কমাতে সাহায্য করে, বিশেষ করে রিয়েক্টের মতো লাইব্রেরিতে।
+
+**উদাহরণ:**
+
+```js
+const original = { name: "Alice", age: 25 };
+
+// Immutable update
+const updated = { ...original, age: 26 };
+console.log(original.age); // 25
+console.log(updated.age); // 26
+```
