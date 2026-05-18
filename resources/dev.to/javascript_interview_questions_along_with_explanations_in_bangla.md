@@ -659,3 +659,5 @@ console.log(updated.age); // 26
 ```js
 Access-Control-Allow-Origin: https://example.com
 ```
+
+- এই হেডারটি ব্রাউজারকে বলে যে https://example.com থেকে আসা রিকোয়েস্টগুলোকে অনুমতি দেওয়া হয়েছে।
