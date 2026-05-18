@@ -682,3 +682,20 @@ self.addEventListener("fetch", (event) => {
   );
 });
 ```
+
+**৩৬. `WebAssembly` কী এবং জাভাস্ক্রিপ্টের সাথে এর সম্পর্ক কি?**
+
+- উত্তর: `WebAssembly (Wasm)` হল একটি বাইনারি ইন্সট্রাকশন ফরম্যাট যা ব্রাউজারে উচ্চ কর্মক্ষমতার কোড চালানোর জন্য ডিজাইন করা হয়েছে। এটি জাভাস্ক্রিপ্টের সাথে কমপ্লিমেন্টারি হিসেবে কাজ করে, যেখানে জাভাস্ক্রিপ্ট হাই-লেভেল লজিক হ্যান্ডেল করে এবং ওয়াসম হাই-পারফরম্যান্স কাজগুলিকে দ্রুত সম্পাদন করে।
+
+**উদাহরণ:**
+
+```js
+// জাভাস্ক্রিপ্ট থেকে WebAssembly মডিউল লোড করা
+fetch("module.wasm")
+  .then((response) => response.arrayBuffer())
+  .then((bytes) => WebAssembly.instantiate(bytes))
+  .then((results) => {
+    const instance = results.instance;
+    console.log(instance.exports.exportedFunction());
+  });
+```
