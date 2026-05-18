@@ -658,6 +658,27 @@ console.log(updated.age); // 26
 
 ```js
 Access-Control-Allow-Origin: https://example.com
+
+// এই হেডারটি ব্রাউজারকে বলে যে https://example.com থেকে আসা রিকোয়েস্টগুলোকে অনুমতি দেওয়া হয়েছে।
 ```
 
-- এই হেডারটি ব্রাউজারকে বলে যে https://example.com থেকে আসা রিকোয়েস্টগুলোকে অনুমতি দেওয়া হয়েছে।
+**৩৫. `Service Workers` কী এবং কেন এটি ব্যবহৃত হয়?**
+
+- উত্তর: `Service Workers` হল জাভাস্ক্রিপ্ট স্ক্রিপ্ট যা ব্যাকগ্রাউন্ডে রান করে, নেটওয়ার্ক রিকোয়েস্ট ক্যাচ করে এবং অফলাইন অভিজ্ঞতা প্রদান করে। এটি PWA (Progressive Web Apps) তৈরিতে ব্যবহৃত হয়।
+
+**উদাহরণ:**
+
+```js
+// service-worker.js
+self.addEventListener("install", (event) => {
+  console.log("Service Worker installing.");
+});
+
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches
+      .match(event.request)
+      .then((response) => response || fetch(event.request)),
+  );
+});
+```
