@@ -649,3 +649,13 @@ const updated = { ...original, age: 26 };
 console.log(original.age); // 25
 console.log(updated.age); // 26
 ```
+
+**৩৪. `CORS (Cross-Origin Resource Sharing)` কী এবং এটি কিভাবে কাজ করে?**
+
+- উত্তর: `CORS` হল একটি সিকিউরিটি ফিচার যা ওয়েব ব্রাউজারকে এক ডোমেইন থেকে অন্য ডোমেইনের রিসোর্সে অ্যাক্সেস নিয়ন্ত্রণ করতে দেয়। সার্ভার সঠিক হেডার পাঠিয়ে CORS নিয়ন্ত্রণ করে।
+
+**উদাহরণ:**
+
+```js
+Access-Control-Allow-Origin: https://example.com
+```
