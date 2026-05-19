@@ -747,3 +747,29 @@ function factorial(n, acc = 1) {
 
 console.log(factorial(5)); // 120
 ```
+
+**৩৯. `Event Loop` কী এবং এটি কীভাবে কাজ করে?**
+
+- উত্তর: `Event Loop` হল জাভাস্ক্রিপ্টের একটি মেকানিজম যা সিঙ্গেল থ্রেডেড ভাষার মধ্যে অ্যাসিঙ্ক্রোনাস অপারেশন হ্যান্ডল করে। এটি কলব্যাক কিউ এবং মাইক্রোটাস্ক কিউয়ের মাধ্যমে কাজ করে, এবং স্ট্যাক ফ্রি হলে কলব্যাকগুলো এক্সিকিউট করে।
+
+**উদাহরণ:**
+
+```js
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Timeout");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("Promise");
+});
+
+console.log("End");
+
+// Output:
+// Start
+// End
+// Promise
+// Timeout
+```
