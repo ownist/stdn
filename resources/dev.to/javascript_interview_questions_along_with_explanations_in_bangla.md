@@ -699,3 +699,36 @@ fetch("module.wasm")
     console.log(instance.exports.exportedFunction());
   });
 ```
+
+**৩৭. `Memoization` কী এবং এটি কিভাবে কাজ করে?**
+
+- উত্তর: `Memoization` হল একটি অপ্টিমাইজেশন টেকনিক যেখানে ফাংশনের পূর্বের ফলাফলগুলো ক্যাশে করে রাখা হয় যাতে একই ইনপুটের জন্য পুনরায় গণনা না করতে হয়। এটি পারফরম্যান্স বাড়ায়, বিশেষ করে ভারী ফাংশনের ক্ষেত্রে।
+
+**উদাহরণ:**
+
+```js
+function memoize(fn) {
+  const cache = {};
+  return function (...args) {
+    const key = JSON.stringify(args);
+    if (cache[key]) {
+      return cache[key];
+    } else {
+      const result = fn(...args);
+      cache[key] = result;
+      return result;
+    }
+  };
+}
+
+const slowFunction = (num) => {
+  // ভারী কাজের সিমুলেশন
+  for (let i = 0; i < 1e9; i++) {}
+  return num * 2;
+};
+
+const fastFunction = memoize(slowFunction);
+
+console.log(fastFunction(10)); // প্রথমবার: সময় সাপেক্ষ
+console.log(fastFunction(10)); // দ্বিতীয়বার: ক্যাশ থেকে তাড়াতাড়ি
+```
