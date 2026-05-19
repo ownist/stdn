@@ -732,3 +732,18 @@ const fastFunction = memoize(slowFunction);
 console.log(fastFunction(10)); // প্রথমবার: সময় সাপেক্ষ
 console.log(fastFunction(10)); // দ্বিতীয়বার: ক্যাশ থেকে তাড়াতাড়ি
 ```
+
+**৩৮. `Tail Call Optimization` কী?**
+
+- উত্তর: `Tail Call Optimization (TCO)` হল একটি অপ্টিমাইজেশন যেখানে রিকার্সিভ ফাংশনের শেষ কলটি অপ্টিমাইজ করে স্ট্যাক ওভারফ্লো প্রতিরোধ করা হয়। এটি শুধুমাত্র কিছু ভাষায় এবং ইঞ্জিনে সমর্থিত।
+
+**উদাহরণ:**
+
+```js
+function factorial(n, acc = 1) {
+  if (n <= 1) return acc;
+  return factorial(n - 1, n * acc); // Tail call
+}
+
+console.log(factorial(5)); // 120
+```
