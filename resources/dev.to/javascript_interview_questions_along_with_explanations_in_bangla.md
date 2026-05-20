@@ -808,3 +808,39 @@ const weakMap = new WeakMap();
 weakMap.set(obj, "value");
 console.log(weakMap.get(obj)); // 'value'
 ```
+
+**৪২. `State Management` কী এবং কেন এটি গুরুত্বপূর্ণ?**
+
+- উত্তর: `State Management` হল অ্যাপ্লিকেশনের স্টেট (ডেটা) পরিচালনার পদ্ধতি। এটি গুরুত্বপূর্ণ কারণ বড় অ্যাপ্লিকেশনগুলিতে বিভিন্ন কম্পোনেন্টের মধ্যে স্টেট শেয়ার এবং ম্যানেজ করা কঠিন হতে পারে।
+  - **কেন গুরুত্বপূর্ণ:**
+    - **সহজ স্টেট ট্র্যাকিং**: স্টেট পরিবর্তনগুলো সহজে ট্র্যাক করা যায়।
+    - **কম্পোনেন্টের মধ্যে ডেটা শেয়ারিং**: বিভিন্ন কম্পোনেন্টের মধ্যে ডেটা সহজে শেয়ার করা যায়।
+    - **Predictable State Updates**: স্টেট আপডেটগুলো পূর্বানুমানযোগ্য হয়।
+
+**উদাহরণ: React এর ক্ষেত্রে Redux ব্যবহার:**
+
+```js
+// Action
+const increment = () => ({ type: "INCREMENT" });
+
+// Reducer
+function counter(state = 0, action) {
+  switch (action.type) {
+    case "INCREMENT":
+      return state + 1;
+    default:
+      return state;
+  }
+}
+
+// Store
+import { createStore } from "redux";
+const store = createStore(counter);
+
+// Subscribe
+store.subscribe(() => console.log(store.getState()));
+
+// Dispatch
+store.dispatch(increment()); // 1
+store.dispatch(increment()); // 2
+```
