@@ -789,3 +789,22 @@ const updated = original.set("age", 26);
 console.log(original.get("age")); // 25
 console.log(updated.get("age")); // 26
 ```
+
+**৪১. `Higher-Order Functions` কী? উদাহরণ সহ ব্যাখ্যা করুন।**
+
+- উত্তর: `Higher-Order Functions` হল সেই ধরনের ফাংশন যা অন্য ফাংশনকে আর্গুমেন্ট হিসেবে গ্রহণ করে অথবা ফাংশনকে রিটার্ন করে। এটি ফাংশনাল প্রোগ্রামিং এর একটি গুরুত্বপূর্ণ ধারণা।
+
+**উদাহরণ:**
+
+```js
+// Map
+const map = new Map();
+const obj = {};
+map.set(obj, "value");
+console.log(map.get(obj)); // 'value'
+
+// WeakMap
+const weakMap = new WeakMap();
+weakMap.set(obj, "value");
+console.log(weakMap.get(obj)); // 'value'
+```
