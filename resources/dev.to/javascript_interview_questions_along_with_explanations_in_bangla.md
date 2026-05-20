@@ -773,3 +773,19 @@ console.log("End");
 // Promise
 // Timeout
 ```
+
+**৪০. `Immutable.js` কী এবং কেন এটি ব্যবহৃত হয়?**
+
+- উত্তর: `Immutable.js` হল একটি লাইব্রেরি যা ইমিউটেবল ডেটা স্ট্রাকচার প্রদান করে, যেমন ইমিউটেবল লিস্ট, ম্যাপ, সেট ইত্যাদি। এটি ডেটা ম্যানিপুলেশনে নিরাপত্তা এবং পারফরম্যান্স বৃদ্ধি করে, বিশেষ করে রিয়েক্টের সাথে ব্যবহৃত হয়।
+
+**উদাহরণ:**
+
+```js
+const { Map } = require("immutable");
+
+const original = Map({ name: "Alice", age: 25 });
+const updated = original.set("age", 26);
+
+console.log(original.get("age")); // 25
+console.log(updated.get("age")); // 26
+```
