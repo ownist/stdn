@@ -183,3 +183,21 @@ function sumOfArr(arr) {
 console.log(sumOfArr(
   [2,4,5,7,1,5,8,7,5,6,9,3]
 ))
+
+
+function stopDuplicate(arr) {
+  const uniqueArr = [];
+  
+  for (const n of arr) {
+    if (!uniqueArr.includes(n)) {
+      uniqueArr.push(n);
+    }
+  }
+  
+  return uniqueArr;
+}
+console.log(stopDuplicate(
+  [
+    5, 4, 5, 2, 1, 4, 5, 2, 7, 8, 8, 5, 2, 6
+  ]
+))
