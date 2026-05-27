@@ -167,3 +167,19 @@ function countEachChar(str) {
 }
 
 console.log(countEachChar("hello"));
+
+
+console.log("\n")
+
+function sumOfArr(arr) {
+  let totalSum = 0;
+  
+  for(const n of arr){
+    totalSum += n;
+  }
+  
+  return totalSum;
+}
+console.log(sumOfArr(
+  [2,4,5,7,1,5,8,7,5,6,9,3]
+))
