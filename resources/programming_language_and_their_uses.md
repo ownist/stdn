@@ -10,3 +10,15 @@
 - Data Analysis
 - Data Visualization
 - Artificial Intelligence
+
+
+**JAVA**
+
+- Android Apps
+- Server-Side Apps
+- Enterprise Apps
+- Web-Based Apps
+- Big Data
+- Game Development
+- Internet of Things
+- Cloud Computing
