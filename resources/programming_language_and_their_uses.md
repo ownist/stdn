@@ -1,4 +1,4 @@
-### Programming Languages & Their Uses
+## Programming Languages & Their Uses
 
 **PYTHON**
 
@@ -32,7 +32,6 @@
 - Networking
 - Virtual Reality
 - Computer Vision
-- 
 
 **JAVASCRIPT**
 
@@ -45,7 +44,6 @@
 - Embedded Systems
 - Chatbot Development
 
-
 **SWIFT**
 
 - iOS App Development
@@ -56,3 +54,14 @@
 - macOS App Dev
 - Machine Learning
 - Automation
+
+**C#**
+
+- Game Development
+- Web Dev & Apps
+- IoT
+- Backend Services
+- Windows App Dev
+- Robotics
+- Cloud Computing
+- Database Programming
