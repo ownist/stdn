@@ -35,3 +35,15 @@
 - Networking
 - Virtual Reality
 - Computer Vision
+- 
+
+**JAVASCRIPT**
+
+- Server-side Development
+- Web Dev & Apps
+- Mobile Apps
+- Machine Learning
+- IoT
+- Automation
+- Embedded Systems
+- Chatbot Development
