@@ -11,7 +11,6 @@
 - Data Visualization
 - Artificial Intelligence
 
-
 **JAVA**
 
 - Android Apps
@@ -22,8 +21,6 @@
 - Game Development
 - Internet of Things
 - Cloud Computing
-- 
-
 
 **C++**
 
@@ -47,3 +44,15 @@
 - Automation
 - Embedded Systems
 - Chatbot Development
+
+
+**SWIFT**
+
+- iOS App Development
+- Deep Learning
+- IoT
+- Server-side Development
+- Open-source Projects
+- macOS App Dev
+- Machine Learning
+- Automation
