@@ -22,3 +22,16 @@
 - Game Development
 - Internet of Things
 - Cloud Computing
+- 
+
+
+**C++**
+
+- Game Development
+- GUI Apps
+- Operating Systems
+- Database Systems
+- Embedded Systems
+- Networking
+- Virtual Reality
+- Computer Vision
