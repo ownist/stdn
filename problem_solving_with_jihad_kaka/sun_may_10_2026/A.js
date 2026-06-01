@@ -201,3 +201,18 @@ console.log(stopDuplicate(
     5, 4, 5, 2, 1, 4, 5, 2, 7, 8, 8, 5, 2, 6
   ]
 ))
+
+
+function sumOfEvenNums(){
+  let sum = 0;
+  
+  for(let i = 1; i <= 100; i++){
+    if(i % 2 === 0){
+      sum += i;
+    }
+  }
+  
+  return sum;
+}
+
+console.log(sumOfEvenNums());
