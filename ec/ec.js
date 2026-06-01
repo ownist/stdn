@@ -16,10 +16,10 @@ freqName(['shahed', 'wahid', 'rachem kaka']);
 console.log("\n") // create a new empty line for better understanding
 
 
-function sumOfOddNumsInOneToHundreed(nims){
+function sumOfOddNumsInOneToHundreed(){
   let sum = 0;
   
-  for(let i = 1; i <= 100; i++){
+  for(let i = 1; i <= 50; i++){
     if(i % 2 !== 0){
       sum += i;
     }
