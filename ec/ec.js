@@ -33,4 +33,20 @@ console.log(sumOfOddNumsInOneToHundreed());
  * =====================
  * monday, june 01
  * =====================
- */
+*/
+
+console.log("\n") // create a new empty line for better understanding
+
+/**
+ * =====================
+ * monday, june 02
+ * =====================
+*/
+function onlyEven(arr){
+  for(const n of arr){
+    if(n % 2 === 0){
+      console.log(n);
+    }
+  }
+}
+onlyEven([5,6,8,47,89]);
