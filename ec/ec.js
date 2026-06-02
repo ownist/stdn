@@ -29,6 +29,7 @@ function sumOfOddNumsInOneToHundreed(){
 }
 
 console.log(sumOfOddNumsInOneToHundreed());
+
 /**
  * =====================
  * monday, june 01
@@ -50,3 +51,14 @@ function onlyEven(arr){
   }
 }
 onlyEven([5,6,8,47,89]);
+
+console.log("\n") // create a new empty line for better understanding
+
+function onlyOdd(arr){
+  for(const n of arr){
+    if(n % 2 !== 0){
+      console.log(n);
+    }
+  }
+}
+onlyOdd([5,6,8,47,89]);
