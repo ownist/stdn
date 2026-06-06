@@ -52,7 +52,7 @@ function onlyEven(arr){
 }
 onlyEven([5,6,8,47,89]);
 
-console.log("\n") // create a new empty line for better understanding
+
 
 function onlyOdd(arr){
   for(const n of arr){
@@ -62,3 +62,15 @@ function onlyOdd(arr){
   }
 }
 onlyOdd([5,6,8,47,89]);
+
+
+console.log("\n") // create a new empty line for better understanding
+
+function onlyEven(){
+  for(let i = 1; i <= 20; i++){
+    if(i % 2 === 0){
+      console.log(i);
+    }
+  }
+}
+onlyEven()
