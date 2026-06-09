@@ -75,3 +75,21 @@ onlyEven();
  * monday, june 02
  * =====================
  */
+
+/**
+ * ====================
+ * tuesday, june 09
+ * ====================
+ */
+function loopUsers(users) {
+  for (const u of users) {
+    console.log(u);
+  }
+}
+
+loopUsers(["shahed", "ownist", "jihad kaka", "rachel kaka", "tomzid kaka"]);
+/**
+ * ====================
+ * tuesday, june 09
+ * ====================
+ */
