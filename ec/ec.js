@@ -93,3 +93,21 @@ loopUsers(["shahed", "ownist", "jihad kaka", "rachel kaka", "tomzid kaka"]);
  * tuesday, june 09
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * friday, june 12
+ * ====================
+ */
+function cToF(c) {
+  return (c * 9) / 5 + 32;
+}
+
+console.log(cToF(25));
+/**
+ * ====================
+ * tuesday, june 09
+ * ====================
+ */
