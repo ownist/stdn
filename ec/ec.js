@@ -111,3 +111,18 @@ console.log(cToF(25));
  * tuesday, june 09
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * wednesday, june 17
+ * ====================
+ */
+function printOneToHundred() {
+  for (let i = 1; i <= 100; i++) {
+    console.log(i);
+  }
+}
+
+printOneToHundred();
