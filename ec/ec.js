@@ -126,3 +126,29 @@ function printOneToHundred() {
 }
 
 printOneToHundred();
+/**
+ * ====================
+ * wednesday, june 17
+ * ====================
+ */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * thursday, june 18
+ * ====================
+ */
+function sumOfEvenNumbers() {
+  let totalSum = 0;
+
+  for (let i = 1; i <= 50; i++) {
+    if (i % 2 === 0) {
+      totalSum += i;
+    }
+  }
+
+  return totalSum;
+}
+
+console.log(sumOfEvenNumbers());
