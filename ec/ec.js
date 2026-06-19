@@ -152,3 +152,28 @@ function sumOfEvenNumbers() {
 }
 
 console.log(sumOfEvenNumbers());
+/**
+ * ====================
+ * thursday, june 18
+ * ====================
+ */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * friday, june 19
+ * ====================
+ */
+function printTenTimesMyName() {
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${i}. ownist`);
+  }
+}
+
+printTenTimesMyName();
+/**
+ * ====================
+ * friday, june 19
+ * ====================
+ */
