@@ -177,3 +177,23 @@ printTenTimesMyName();
  * friday, june 19
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * saturday, june 20
+ * ====================
+ */
+function printAllKakas(kakas) {
+  for (const k of kakas) {
+    console.log(k);
+  }
+}
+
+printAllKakas(["shahed", "ownist", "rachel", "jihad", "tomjid"]);
+/**
+ * ====================
+ * saturday, june 20
+ * ====================
+ */
