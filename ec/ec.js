@@ -197,3 +197,18 @@ printAllKakas(["shahed", "ownist", "rachel", "jihad", "tomjid"]);
  * saturday, june 20
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * sunday, june 21
+ * ====================
+ */
+function countFiveIncrement() {
+  for (let i = 10; i <= 50; i += 5) {
+    console.log(i);
+  }
+}
+
+countFiveIncrement();
