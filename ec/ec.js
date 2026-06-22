@@ -217,3 +217,27 @@ countFiveIncrement();
  * sunday, june 21
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * monday, june 22
+ * ====================
+ */
+function printEvenAndOddNumbersBetweenOneToFifty() {
+  for (let i = 1; i <= 50; i++) {
+    if (i % 2 === 0) {
+      console.log(`${i} is even`);
+    } else {
+      console.log(`${i} is odd`);
+    }
+  }
+}
+
+printEvenAndOddNumbersBetweenOneToFifty();
+/**
+ * ====================
+ * monday, june 22
+ * ====================
+ */
