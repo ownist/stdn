@@ -241,3 +241,24 @@ printEvenAndOddNumbersBetweenOneToFifty();
  * monday, june 22
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * tuesday, june 23
+ * ====================
+ */
+function practiceBreakFunction() {
+  for (let i = 1; i <= 10; i++) {
+    if (i === 5) break;
+    console.log(i);
+  }
+}
+
+practiceBreakFunction();
+/**
+ * ====================
+ * tuesday, june 23
+ * ====================
+ */
