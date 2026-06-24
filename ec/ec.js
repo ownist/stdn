@@ -262,3 +262,24 @@ practiceBreakFunction();
  * tuesday, june 23
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * wednesday, june 24
+ * ====================
+ */
+function practiceContinueFunction() {
+  for (let i = 1; i <= 10; i++) {
+    if (i === 5 || i === 7 || i === 9) continue;
+    console.log(i);
+  }
+}
+
+practiceContinueFunction();
+/**
+ * ====================
+ * wednesday, june 24
+ * ====================
+ */
