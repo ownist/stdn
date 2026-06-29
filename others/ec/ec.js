@@ -283,3 +283,23 @@ practiceContinueFunction();
  * wednesday, june 24
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * monday, june 29
+ * ====================
+ */
+function countEvenNumbersBasedOnUser(countStart, countEnd) {
+  for (let i = countStart; i <= countEnd; i++) {
+    if (i % 2 === 0) console.log(i);
+  }
+}
+
+countEvenNumbersBasedOnUser(12, 22);
+/**
+ * ====================
+ * monday, june 29
+ * ====================
+ */
