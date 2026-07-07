@@ -303,3 +303,22 @@ countEvenNumbersBasedOnUser(12, 22);
  * monday, june 29
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * tuesday, july 7
+ * ====================
+ */
+function totalSumArrayOfNumbers(arr) {
+  let sum = 0;
+
+  for (const num of arr) {
+    sum += num;
+  }
+
+  return sum;
+}
+
+console.log(totalSumArrayOfNumbers([5, 2, 4, 8]));
