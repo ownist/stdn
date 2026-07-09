@@ -322,3 +322,27 @@ function totalSumArrayOfNumbers(arr) {
 }
 
 console.log(totalSumArrayOfNumbers([5, 2, 4, 8]));
+/**
+ * ====================
+ * tuesday, july 7
+ * ====================
+ */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * thursday, july 9
+ * ====================
+ */
+function totalSumOfOddNumbersBetweenOneToFifty() {
+  let sum = 0;
+
+  for (let i = 1; i <= 50; i++) {
+    if (i % 2 === 0) {
+      sum += i;
+    }
+  }
+
+  console.log(sum);
+}
