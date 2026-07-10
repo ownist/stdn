@@ -346,3 +346,28 @@ function totalSumOfOddNumbersBetweenOneToFifty() {
 
   console.log(sum);
 }
+/**
+ * ====================
+ * thursday, july 9
+ * ====================
+ */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * friday, july 10
+ * ====================
+ */
+function printOneToTen() {
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+}
+
+printOneToTen();
+/**
+ * ====================
+ * friday, july 10
+ * ====================
+ */
