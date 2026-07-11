@@ -371,3 +371,23 @@ printOneToTen();
  * friday, july 10
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * saturday, july 11
+ * ====================
+ */
+function printMyTeammateNames(teammate) {
+  for (const name of teammate) {
+    console.log(name);
+  }
+}
+
+printMyTeammateNames(["rachel kaka", "jihad kaka", "tomjid kaka", "and me"]);
+/**
+ * ====================
+ * saturday, july 11
+ * ====================
+ */
