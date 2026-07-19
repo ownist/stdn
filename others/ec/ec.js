@@ -391,3 +391,21 @@ printMyTeammateNames(["rachel kaka", "jihad kaka", "tomjid kaka", "and me"]);
  * saturday, july 11
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * sunday, july 19
+ * ====================
+ */
+function reverseAnArrayList(arr) {
+  return arr.reverse();
+}
+
+console.log(reverseAnArrayList(["shahed", "uownist", "anifa"]));
+/**
+ * ====================
+ * sunday, july 19
+ * ====================
+ */
