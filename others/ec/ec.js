@@ -409,3 +409,27 @@ console.log(reverseAnArrayList(["shahed", "uownist", "anifa"]));
  * sunday, july 19
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * thursday, july 23
+ * ====================
+ */
+function sumOfArrayNums(arrNums) {
+  let sum = 0;
+
+  for (const num of arrNums) {
+    sum += num;
+  }
+
+  return sum;
+}
+
+console.log(sumOfArrayNums([5, 2, 3, 6, 9]));
+/**
+ * ====================
+ * thursday, july 23
+ * ====================
+ */
