@@ -433,3 +433,21 @@ console.log(sumOfArrayNums([5, 2, 3, 6, 9]));
  * thursday, july 23
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * friday, july 24
+ * ====================
+ */
+function revArrNames(arr) {
+  return arr.reverse();
+}
+
+console.log(revArrNames(["ownist", "shahed", "kaka"]));
+/**
+ * ====================
+ * friday, july 24
+ * ====================
+ */
